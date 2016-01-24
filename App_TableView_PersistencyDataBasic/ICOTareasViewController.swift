@@ -275,7 +275,6 @@ extension ICOTareasViewController : UIImagePickerControllerDelegate, UINavigatio
 
         
         myImageViewIV.image = image
-        
         dismissViewControllerAnimated(true, completion: nil)
     }
     

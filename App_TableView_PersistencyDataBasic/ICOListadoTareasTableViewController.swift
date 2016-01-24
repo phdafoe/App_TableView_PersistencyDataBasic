@@ -14,7 +14,6 @@ var myListDescription = [String]()
 var myListPriority = [String]()
 var myListPhoto = [NSData]()
 var myListCategory = [String]()
-var myPhotoPerfil = NSData()
 
 
 class ICOListadoTareasTableViewController: UITableViewController {
@@ -30,15 +29,6 @@ class ICOListadoTareasTableViewController: UITableViewController {
         
         super.viewDidLoad()
         
-        UIApplication.sharedApplication().applicationIconBadgeNumber = 0
-
-    }
-    
-    override func viewDidAppear(animated: Bool) {
-        
-        super.viewDidAppear(animated)
-        
-        
         myListTask = NSUserDefaults.standardUserDefaults().objectForKey("miListaDeTareas") as! [String]
         myListDescription = NSUserDefaults.standardUserDefaults().objectForKey("miDescripcionDeTarea") as! [String]
         myListPriority = NSUserDefaults.standardUserDefaults().objectForKey("miPrioridadDeLista") as! [String]
@@ -49,6 +39,14 @@ class ICOListadoTareasTableViewController: UITableViewController {
         
         self.title = "Lista de tareas"
         
+        UIApplication.sharedApplication().applicationIconBadgeNumber = 0
+
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        
+        super.viewDidAppear(animated)
+
         myTableViewList.reloadData()
         
     }
@@ -65,7 +63,7 @@ class ICOListadoTareasTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         
-        return myListCategory.count
+        return myListTask.count
     }
     
     //MARK: - UTILS
@@ -80,17 +78,12 @@ class ICOListadoTareasTableViewController: UITableViewController {
         let customCell : ICOCustomCell = tableView.dequeueReusableCellWithIdentifier("Cell") as! ICOCustomCell
         
         let image : UIImage = UIImage(data: myListPhoto[indexPath.row])!
-
         
         customCell.myTask.text = myListTask[indexPath.row]
         customCell.myPriority.text = myListPriority[indexPath.row]
         customCell.myDescription.text = myListDescription[indexPath.row]
         customCell.myCategory.text = myListCategory[indexPath.row]
         customCell.myCustomImageView.image = image
-        
-        
-        
-        
 
         return customCell
     }
@@ -130,15 +123,15 @@ class ICOListadoTareasTableViewController: UITableViewController {
         if editingStyle == .Delete {
             
             myListTask.removeAtIndex(indexPath.row)
-            myListPriority.removeAtIndex(indexPath.row)
+            /*myListPriority.removeAtIndex(indexPath.row)
             myListDescription.removeAtIndex(indexPath.row)
-            myListPhoto.removeAtIndex(indexPath.row)
+            myListPhoto.removeAtIndex(indexPath.row)*/
             
 
             NSUserDefaults.standardUserDefaults().setObject(myListTask, forKey: "miListaDeTareas")
-            NSUserDefaults.standardUserDefaults().setObject(myListDescription, forKey: "miDescripcionDeTarea")
+            /*NSUserDefaults.standardUserDefaults().setObject(myListDescription, forKey: "miDescripcionDeTarea")
             NSUserDefaults.standardUserDefaults().setObject(myListPriority, forKey: "miPrioridadDeLista")
-            NSUserDefaults.standardUserDefaults().setObject(myListPhoto, forKey: "miPhoto")
+            NSUserDefaults.standardUserDefaults().setObject(myListPhoto, forKey: "miPhoto")*/
             
             myTableViewList.reloadData()
             

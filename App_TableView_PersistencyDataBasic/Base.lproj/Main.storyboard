@@ -26,13 +26,13 @@
         <!--Listado Tareas Table View Controller-->
         <scene sceneID="ufv-xO-oRi">
             <objects>
-                <tableViewController id="tm6-ZU-Toa" customClass="ICOListadoTareasTableViewController" customModule="App_TableView_PersistencyDataBasic" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="tm6-ZU-Toa" customClass="ICOListadoTareasTableViewController" customModule="iCoTask" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="108" sectionHeaderHeight="28" sectionFooterHeight="28" id="bjq-dZ-KqQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="ywv-NP-kRq" customClass="ICOCustomCell" customModule="App_TableView_PersistencyDataBasic" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="ywv-NP-kRq" customClass="ICOCustomCell" customModule="iCoTask" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="320" height="108"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ywv-NP-kRq" id="X6c-0X-BMf">
@@ -119,7 +119,7 @@
         <!--Detail View Controller-->
         <scene sceneID="MM2-lA-E6R">
             <objects>
-                <viewController storyboardIdentifier="icoDetail" id="Te3-My-DDb" customClass="ICODetailViewController" customModule="App_TableView_PersistencyDataBasic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="icoDetail" id="Te3-My-DDb" customClass="ICODetailViewController" customModule="iCoTask" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VNi-vr-tvf"/>
                         <viewControllerLayoutGuide type="bottom" id="sm3-qg-S3b"/>
@@ -183,7 +183,7 @@
         <!--Libro de Tareas-->
         <scene sceneID="N6O-Pp-6wf">
             <objects>
-                <viewController id="LU9-dF-PVG" customClass="ICOTareasViewController" customModule="App_TableView_PersistencyDataBasic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="LU9-dF-PVG" customClass="ICOTareasViewController" customModule="iCoTask" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QBJ-Fd-6qu"/>
                         <viewControllerLayoutGuide type="bottom" id="fbx-GN-WyC"/>
@@ -259,7 +259,7 @@
                                 <rect key="frame" x="209" y="96" width="110" height="110"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.97254901959999995" green="0.66749339479618686" blue="0.31572401659935428" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.21960784310000001" green="0.71764705880000002" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Libro de Tareas" id="xaN-kI-16A">
                         <barButtonItem key="rightBarButtonItem" systemItem="camera" id="SSM-9y-JZX">
@@ -284,7 +284,7 @@
         <!--Categorias-->
         <scene sceneID="DlI-f2-i6Z">
             <objects>
-                <tableViewController id="enl-I9-AdF" customClass="ICOCategoryTableViewController" customModule="App_TableView_PersistencyDataBasic" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="enl-I9-AdF" customClass="ICOCategoryTableViewController" customModule="iCoTask" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="1no-xQ-w8P">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
