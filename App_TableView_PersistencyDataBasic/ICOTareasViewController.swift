@@ -152,7 +152,7 @@ class ICOTareasViewController: UIViewController, UIPickerViewDelegate, UIPickerV
     
     }
     
-    func pickerView(pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusingView view: UIView?) -> UIView {
+    /*func pickerView(pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusingView view: UIView?) -> UIView {
         
         let pickerLabel = UILabel()
         let titleData = pickerData[row]
@@ -169,7 +169,7 @@ class ICOTareasViewController: UIViewController, UIPickerViewDelegate, UIPickerV
         
         return pickerLabel
         
-    }
+    }*/
     
     
     

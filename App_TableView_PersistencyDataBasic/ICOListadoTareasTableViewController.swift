@@ -123,15 +123,17 @@ class ICOListadoTareasTableViewController: UITableViewController {
         if editingStyle == .Delete {
             
             myListTask.removeAtIndex(indexPath.row)
-            /*myListPriority.removeAtIndex(indexPath.row)
+            myListPriority.removeAtIndex(indexPath.row)
             myListDescription.removeAtIndex(indexPath.row)
-            myListPhoto.removeAtIndex(indexPath.row)*/
+            myListPhoto.removeAtIndex(indexPath.row)
+            myListCategory.removeAtIndex(indexPath.row)
             
 
             NSUserDefaults.standardUserDefaults().setObject(myListTask, forKey: "miListaDeTareas")
-            /*NSUserDefaults.standardUserDefaults().setObject(myListDescription, forKey: "miDescripcionDeTarea")
+            NSUserDefaults.standardUserDefaults().setObject(myListDescription, forKey: "miDescripcionDeTarea")
             NSUserDefaults.standardUserDefaults().setObject(myListPriority, forKey: "miPrioridadDeLista")
-            NSUserDefaults.standardUserDefaults().setObject(myListPhoto, forKey: "miPhoto")*/
+            NSUserDefaults.standardUserDefaults().setObject(myListPhoto, forKey: "miPhoto")
+            NSUserDefaults.standardUserDefaults().setObject(myListCategory, forKey: "miNuevaCategoria")
             
             myTableViewList.reloadData()
             
