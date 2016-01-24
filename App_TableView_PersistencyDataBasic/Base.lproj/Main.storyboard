@@ -71,7 +71,7 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder-man.png" translatesAutoresizingMaskIntoConstraints="NO" id="uhK-Ag-T44">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundPhoto.png" translatesAutoresizingMaskIntoConstraints="NO" id="uhK-Ag-T44">
                                             <rect key="frame" x="239" y="18" width="70" height="70"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="70" id="De4-AQ-9aQ"/>
@@ -161,26 +161,26 @@
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHL-aG-RuJ">
                                         <rect key="frame" x="155" y="20" width="157" height="27"/>
-                                        <color key="backgroundColor" red="1" green="0.80489309210000004" blue="0.12936116619999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.4989846932" green="0.78669197619999998" blue="0.80489309210000004" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aaq-WO-n1Z">
                                         <rect key="frame" x="98" y="143" width="214" height="27"/>
-                                        <color key="backgroundColor" red="1" green="0.80489309210000004" blue="0.12936116619999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.4989846932" green="0.78669197619999998" blue="0.80489309210000004" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="18"/>
                                         <color key="textColor" red="0.95302220394736847" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLf-T5-Y20">
                                         <rect key="frame" x="98" y="50" width="214" height="90"/>
-                                        <color key="backgroundColor" red="1" green="0.80489309210000004" blue="0.12936116619999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.4989846932" green="0.78669197619999998" blue="0.80489309210000004" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ehz-PG-XlI">
-                                        <rect key="frame" x="37" y="183" width="246" height="246"/>
+                                        <rect key="frame" x="97" y="175" width="216" height="216"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -233,6 +233,12 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Introduce una foto para tu lista de tareas" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Sx-Uu-mrl">
+                                        <rect key="frame" x="209" y="20" width="103" height="55"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="05t-Wb-8xK">
                                         <rect key="frame" x="20" y="226" width="181" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -258,35 +264,33 @@
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FCC-lk-a9W">
                                         <rect key="frame" x="20" y="110" width="181" height="83"/>
-                                        <color key="backgroundColor" red="1" green="0.80489309210526316" blue="0.12936116619999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.49898469324754796" green="0.78669197615339714" blue="0.80489309210526316" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnn-lI-h6c">
-                                        <rect key="frame" x="20" y="270" width="130" height="43"/>
-                                        <color key="backgroundColor" red="1" green="0.80489309210000004" blue="0.12936116619999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <rect key="frame" x="16" y="270" width="130" height="43"/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="27"/>
-                                        <state key="normal" title="Categoria">
+                                        <state key="normal" title="Categoria" backgroundImage="buttonGeneral.png">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
                                             <segue destination="enl-I9-AdF" kind="push" identifier="SeleccionaUnaCategoria" id="xyX-TQ-8nX"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmF-li-N8S">
-                                        <rect key="frame" x="20" y="327" width="280" height="71"/>
-                                        <color key="backgroundColor" red="1" green="0.80489309210000004" blue="0.12936116619999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="36"/>
-                                        <state key="normal" title="Listado de Tareas">
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmF-li-N8S">
+                                        <rect key="frame" x="12" y="321" width="280" height="89"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="34"/>
+                                        <state key="normal" title="Listado de Tareas" backgroundImage="buttonGeneral.png">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="saveInfoInTableView:" destination="LU9-dF-PVG" eventType="touchUpInside" id="VrL-03-6YE"/>
                                         </connections>
                                     </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="placeholder-man.png" translatesAutoresizingMaskIntoConstraints="NO" id="Fod-BF-ZOW">
-                                        <rect key="frame" x="209" y="43" width="110" height="110"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgroundPhoto.png" translatesAutoresizingMaskIntoConstraints="NO" id="Fod-BF-ZOW">
+                                        <rect key="frame" x="206" y="79" width="110" height="110"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -408,6 +412,7 @@
     <resources>
         <image name="ListadoTareas70x70.png" width="35" height="35"/>
         <image name="Tareas70x70.png" width="35" height="35"/>
-        <image name="placeholder-man.png" width="2083" height="2083"/>
+        <image name="backgroundPhoto.png" width="146" height="152"/>
+        <image name="buttonGeneral.png" width="320" height="125"/>
     </resources>
 </document>
