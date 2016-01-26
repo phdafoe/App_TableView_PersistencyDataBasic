@@ -30,7 +30,7 @@ class ICOTareasViewController: UIViewController, UIPickerViewDelegate, UIPickerV
         
         
         
-        if myAddTaskTF.text == nil || myAddDescriptionTV.text == nil || myAddPriorityTF.text == nil || myImageViewIV.image == nil{
+        if myAddTaskTF.text == "" || myAddDescriptionTV.text == "" || myAddPriorityTF.text == "" || myImageViewIV.image == nil{
             
             displayAlertViewController("Hey", message: "completa toda la informacion requerida")
             
@@ -59,7 +59,7 @@ class ICOTareasViewController: UIViewController, UIPickerViewDelegate, UIPickerV
             
             
             let localNotification = UILocalNotification()
-            localNotification.fireDate = NSDate(timeIntervalSinceNow: 120)
+            localNotification.fireDate = NSDate(timeIntervalSinceNow: 3600)
             localNotification.alertBody = "Hey tienes una nueva tarea"
             localNotification.timeZone = NSTimeZone.defaultTimeZone()
             localNotification.applicationIconBadgeNumber = UIApplication.sharedApplication().applicationIconBadgeNumber + 1

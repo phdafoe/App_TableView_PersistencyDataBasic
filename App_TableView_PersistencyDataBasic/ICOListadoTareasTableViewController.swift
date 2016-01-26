@@ -29,6 +29,12 @@ class ICOListadoTareasTableViewController: UITableViewController {
         
         super.viewDidLoad()
         
+        if myListTask.isEmpty ?? true{
+            
+            print("Hola mundo")
+        }else{
+            
+        
         myListTask = NSUserDefaults.standardUserDefaults().objectForKey("miListaDeTareas") as! [String]
         myListDescription = NSUserDefaults.standardUserDefaults().objectForKey("miDescripcionDeTarea") as! [String]
         myListPriority = NSUserDefaults.standardUserDefaults().objectForKey("miPrioridadDeLista") as! [String]
@@ -38,6 +44,7 @@ class ICOListadoTareasTableViewController: UITableViewController {
         
         
         self.title = "Lista de tareas"
+        }
         
         UIApplication.sharedApplication().applicationIconBadgeNumber = 0
 

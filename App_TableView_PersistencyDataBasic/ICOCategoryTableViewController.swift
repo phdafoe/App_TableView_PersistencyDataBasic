@@ -16,7 +16,7 @@ class ICOCategoryTableViewController: UITableViewController {
     var seleccionIndexPath = NSIndexPath()
     
     
-    var listadoCategorias = ["Tienda de Apple", "Bar", "Tienda de Libros", "Club", "Mercadona", "Museos", "Helados", "Peluquería", "Parque Rey Juan Carlos","Sin Categoria"]
+    var listadoCategorias = ["Sin Categoria", "Tienda de Apple", "Bar", "Tienda de Libros", "Club", "Mercadona", "Museos", "Helados", "Peluquería", "Parque Rey Juan Carlos"]
     
     
 
@@ -60,6 +60,7 @@ class ICOCategoryTableViewController: UITableViewController {
         
         
         let nombreDeCategoria = listadoCategorias[indexPath.row]
+        
         cell.textLabel?.text = nombreDeCategoria
         
         
@@ -111,6 +112,8 @@ class ICOCategoryTableViewController: UITableViewController {
             }
         }
     }
+    
+    
     
     
     

@@ -24,7 +24,7 @@
             </objects>
             <point key="canvasLocation" x="-174.93333333333334" y="116.44"/>
         </scene>
-        <!--Listado Tareas Table View Controller-->
+        <!--Mis Tareas-->
         <scene sceneID="ufv-xO-oRi">
             <objects>
                 <tableViewController id="tm6-ZU-Toa" customClass="ICOListadoTareasTableViewController" customModule="iCoTask" customModuleProvider="target" sceneMemberID="viewController">
@@ -53,7 +53,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Descripcion" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uhx-iR-fVg">
-                                            <rect key="frame" x="79" y="66" width="160" height="35"/>
+                                            <rect key="frame" x="80" y="66" width="160" height="35"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
@@ -117,7 +117,7 @@
                             <outlet property="delegate" destination="tm6-ZU-Toa" id="cqL-O3-aSe"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Ydz-In-XnH"/>
+                    <navigationItem key="navigationItem" title="Mis Tareas" id="Ydz-In-XnH"/>
                     <connections>
                         <outlet property="myTableViewList" destination="bjq-dZ-KqQ" id="FNq-sS-TmI"/>
                     </connections>
