@@ -15,8 +15,6 @@ class ICOCustomCell: UITableViewCell {
     @IBOutlet weak var myPriority: UILabel!
     @IBOutlet weak var myDescription: UITextView!
     @IBOutlet weak var myCategory: UILabel!
-    
-    
     @IBOutlet weak var myCustomImageView: UIImageView!
     
 

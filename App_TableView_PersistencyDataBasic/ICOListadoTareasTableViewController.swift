@@ -24,14 +24,17 @@ class ICOListadoTareasTableViewController: UITableViewController {
     
     @IBOutlet var myTableViewList: UITableView!
     
-
+    //MARK: - LIFE
     override func viewDidLoad() {
         
         super.viewDidLoad()
         
-        if myListTask.isEmpty ?? true{
+        
+        
+        if (NSUserDefaults.standardUserDefaults().objectForKey("miListaDeTareas")!.isEmpty) ?? true && (NSUserDefaults.standardUserDefaults().objectForKey("miDescripcionDeTarea")!.isEmpty ?? true && (NSUserDefaults.standardUserDefaults().objectForKey("miPrioridadDeLista")!.isEmpty ?? true && (NSUserDefaults.standardUserDefaults().objectForKey("miNuevaCategoria")!.isEmpty ?? true && (NSUserDefaults.standardUserDefaults().objectForKey("miPhoto")!.isEmpty ?? true)))){
             
             print("Hola mundo")
+            
         }else{
             
         
@@ -39,11 +42,8 @@ class ICOListadoTareasTableViewController: UITableViewController {
         myListDescription = NSUserDefaults.standardUserDefaults().objectForKey("miDescripcionDeTarea") as! [String]
         myListPriority = NSUserDefaults.standardUserDefaults().objectForKey("miPrioridadDeLista") as! [String]
         myListCategory = NSUserDefaults.standardUserDefaults().objectForKey("miNuevaCategoria") as! [String]
-        
         myListPhoto = NSUserDefaults.standardUserDefaults().objectForKey("miPhoto") as! [NSData]
-        
-        
-        self.title = "Lista de tareas"
+            
         }
         
         UIApplication.sharedApplication().applicationIconBadgeNumber = 0
@@ -64,17 +64,11 @@ class ICOListadoTareasTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-
-    
-
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         
         return myListTask.count
     }
-    
-    //MARK: - UTILS
-    
     
     
    
@@ -120,7 +114,7 @@ class ICOListadoTareasTableViewController: UITableViewController {
         
     }
 
-    
+    //MARK: - COMMIT DELETE
     // Override to support editing the table view.
     override func tableView(tableView: UITableView,
         commitEditingStyle editingStyle: UITableViewCellEditingStyle,

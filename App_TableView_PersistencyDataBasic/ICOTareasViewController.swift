@@ -70,12 +70,12 @@ class ICOTareasViewController: UIViewController, UIPickerViewDelegate, UIPickerV
             
             myAddTaskTF.text = ""
             myAddDescriptionTV.text = ""
-            myAddPriorityTF.text = ""
+            //myAddPriorityTF.text = ""
             
             myNewCategoryLBL.text = "Sin Categoria"
         
             //IMAGEN
-            myImageViewIV.image = nil
+            myImageViewIV.image = UIImage(named: "backgroundPhoto@2x.png")
             
             
         }
@@ -209,6 +209,7 @@ class ICOTareasViewController: UIViewController, UIPickerViewDelegate, UIPickerV
 }
 
 
+//MARK: - PICKER PHOTO
 extension ICOTareasViewController : UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     
     

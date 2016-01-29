@@ -99,6 +99,8 @@ class ICOCategoryTableViewController: UITableViewController {
         
     }
     
+    
+    //MARK: - SEGUE ESPECIAL
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         if segue.identifier == "passInformationToTareas"{

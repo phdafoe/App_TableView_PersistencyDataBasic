@@ -25,6 +25,8 @@ class ICODetailViewController: UIViewController {
     @IBOutlet weak var myPriorityLBL: UILabel!
     @IBOutlet weak var myImageRepresentation: UIImageView!
 
+    
+    //MARK: - LIFE
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,10 +35,6 @@ class ICODetailViewController: UIViewController {
         myPriorityLBL.text = dataPriority
         myImageRepresentation.image = dataImage!
 
-        
-        
-        
-        
         self.title = dataTask
 
         // Do any additional setup after loading the view.
